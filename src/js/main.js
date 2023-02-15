@@ -2,6 +2,7 @@
 import { parseMarkdown } from "./markdown.js"
 // editor
 let editor = document.getElementById("editor");
+console.log(editor.tagName)
 editor.addEventListener("keyup", parse, false);
 // parse mode
 let parseModeButton = document.getElementById('parseMode');
@@ -20,7 +21,7 @@ parseModeButton.addEventListener("click", function (e) {
 function parse() {
     let output = document.getElementById("parsed");
     console.log("parsing input")
-    output[parseHtml ? "innerHTML" : "innerText"] = parseMarkdown(editor.innerText);
+    output[parseHtml ? "innerHTML" : "innerText"] = editor.tagName === "TEXTAREA"? parseMarkdown(editor.value) : parseMarkdown(editor.innerText);
 };
 
 //onload init parse
