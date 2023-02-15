@@ -1,0 +1,25 @@
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font: 300 16px 'Cousine';
+  color: #444;
+  line-height: 1.5em;
+}
+
+.editor {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.editorWrapper{
+  display: block;
+  width: 100%;
+  height: 30%;
+  margin: 5% 5% 5% 5%;
+  border: 25px darkblue;
+  padding: 10px;
+}
