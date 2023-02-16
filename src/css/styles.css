@@ -13,9 +13,7 @@ body {
   display: block;
   width: 85%;
   margin-left: 7.5%;
-  border-style: solid;
-  border-width: 5px;
-  border-color: aqua;
-  padding: 50;
+  border: 5px aqua solid;
+  padding: 50px;
   height: 30%;
 }
